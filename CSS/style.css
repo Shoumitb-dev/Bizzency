@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Ubuntu:wght@300;400;500&display=swap');
+/* Common Css */
+:root{
+    --primaryfont: 'Ubuntu', sans-serif;
+    --secondaryfont: 'Abril Fatface', cursive;
+    --thirdfont: 'Open Sans', sans-serif;
+    --primarycolor: #0f2f44;
+    --secondarycolor: #ffc712;
+    --thirdcolor: #8383bf;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.center{
+    align-items: center;
+}
+.heading p{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primarycolor);
+}
+.heading h2{
+    font-family: var(--secondaryfont);
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--primarycolor);
+}
+.cnt{
+    font-family: var(--thirdfont);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primarycolor);
+    margin: 32px 0;
+}
+.yellowbtn{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primarycolor);
+    padding: 16px 20px;
+    background-color: var(--secondarycolor);
+    border-radius: 8px;
+}
+/* Common css end here */
+/* Header Section Start Here */
+header{
+    background-color: var(--primarycolor);
+    color: white;
+    padding: 20px 0;
+}
+.welcome{
+    width: 50%;
+}
+.opening{
+    width: 50%;
+    text-align: right;
+}
+/* Header Section Ends Here */
+/* Navbar Starts Here */
+.logo{
+    width: 40%;
+}
+.center{
+    justify-content: center;
+}
+.menu{
+    width: 60%;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    display: inline-block;
+    padding: 42px 20px;
+    color: var(--primarycolor);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 300ms;
+}
+.menu ul li:hover a{
+    color: var(--secondarycolor);
+}
+/* Navbar Ends Here */
+
+/* Banner Section Starts Here */
+#banner{
+    background-image: url(../images/Bizzency-pc-setup.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0;
+}
+#banner h3{
+    font-size: 50px;
+    font-weight: 300;
+    color: var(--primarycolor);
+}
+#banner h3{
+    font-size: 50px;
+    font-weight: 300;
+    color: var(--thirdcolor);
+}
+#banner h1{
+    font-family: var(--secondaryfont);
+    font-size: 80px;
+    font-weight: 400;
+    color: var(--primarycolor);
+    margin: -12px 0;
+}
+#banner h5{
+    font-family: var(--primaryfont);
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--thirdcolor);
+    letter-spacing: 9px;
+}
+#banner p{
+    font-family: var(--thirdfont);
+    font-size: 14px;
+    color: #444444;
+    margin: 30px 0;  
+}
+#banner .explore-more{
+    padding: 15px 20px;
+    color: white;
+    background-color: var(--thirdcolor);
+    border-radius: 8px;
+    display: inline-block;
+}
+#banner .videobtn{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    background-color: white;
+    color: var(--thirdcolor);
+    box-shadow: rgba(0, 0, 0, 0) 0px 3px 8px;
+    margin-left: 20px;
+}
+/* Banner Section End Here */
+
+/* About Us Starts from here */
+#about{
+    margin: 100px 0;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+#about ul li{
+    margin: 30px 30px;
+    font-family: var(--thirdfont);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primarycolor);
+}
+#about .read-btn{
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 16px 20px;
+    background-color: whtie;
+    color: var(--primarycolor);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 20px;}
+    #about .yellow-btn{
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 16px 20px;
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 20px;
+    }
+/* About us end here */
+/* Our Skills Start here */
+#our-skills .right{
+    width: 50%;
+    text-align: right;
+  
+}
+#our-skills .left{
+    width: 50%;
+}
+.Ai{
+    width: 450px;
+}
+/* Our Skills end here */
+
+/* Our Services Start here */
+#our-services{
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+#our-services .heading{
+    text-align: center;
+}
+.service-card{
+    width: calc(33.33% - 30px);
+    margin: 55px 15px;
+    position: relative;
+}
+.service-card .icon{
+    width: 25%;
+    background-color: #e9e9e9;
+    text-align: center;
+    padding: 54px 0;
+}
+.service-card .text{
+    width: 75%;
+    background-color: #eeeeee;
+    padding: 27px 20px;
+}
+.service-card .text h4{
+    font-style: 20px;
+    font-weight: 500;
+    color: #222222;
+}
+.service-card .text p{
+    font-family: var(--thirdfont);
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 20px;
+    margin-top: 20px;
+}
+.service-card .overlay{
+    background-color: var(--primarycolor);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 30px;
+    transform: scale(0);
+    opacity: 0;
+    visibility: 0;
+    transition: 300ms ease;
+}
+.service-card :hover .overlay{
+    transform: scale(1);
+    opacity: 1;
+    visibility: 1;
+}
+.service-card .overlay h4{
+    color: white;
+    font-style: 20px;
+    font-weight: 500;
+}
+.service-card .overlay a{
+    border-radius: 50%;
+    background-color: var(--secondarycolor);
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: black;
+    line-height: 40px;
+    position: absolute;
+    left: 0%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    opacity: 0;
+    visibility: 0;
+    transition: 300ms;
+    transition-delay: 250ms;
+}
+.service-card :hover .overlay a{
+    left: 50%;
+    opacity: 1;
+    visibility: 1;
+}
+/* Our services end here */
+/* Our portfolio start here*/
+#our-portfolio{
+    padding: 100px 0;
+}
+#our-portfolio .heading{
+    text-align: center;
+}
+.portfolio-card{
+    width: calc(33.33% - 80px);
+    margin: 60px 40px;
+    position: relative;
+}
+
+#our-portfolio .yellowbtn{
+    margin: 0 500px;
+}
+.overlay2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+    padding: 32px 0;
+    text-align: center;
+    color: var(--primarycolor);
+    font-size: 20px;
+    font-weight: 500;
+    transform: scaleY(1);
+    transition: 0.4s;
+    transform-origin: bottom;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.overlay2:hover{
+    opacity: 1;
+}
+/* our portfolio ends here */
+/* Our Testimonial start here */
+#testi {
+    padding: 55px 0;
+    background-color: #f5f5f5;
+  }
+  #testi .text-center{
+    text-align: center;
+    
+}
+.text-center p{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primarycolor);
+}
+.text-center h2{
+    font-family: var(--secondaryfont);
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--primarycolor);
+    margin-bottom: 50px;
+}
+  
+  #testi .t-card {
+    width: calc(50% - 30px);
+    margin: 0 15px;
+    background-color: var(--iconcolor);
+  }
+  #testi .t-card .logo {
+    width: 40%;
+  }
+  #testi .t-card .texts6 {
+    width: 60%;
+  }
+  #testi .t-card .texts6 p {
+    margin: 30px 20px;
+    font-family: var(--thirdfont);
+    font-size: 14px;
+    font-weight: 400;
+  }
+  #testi .t-card .texts6 h2 {
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primarycolor);
+  }
+  #testi .t-card .texts6 h3 {
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+/* Our Testimonial ends here */
+
+/* Our Latest Blogs start here */
+#blogs{
+    padding: 100px 0;
+    /* display: block; */
+}
+#blogs .heading{
+    text-align: center;
+}
+.olb-cards{
+    width: 33.33%;
+    background-color: #f5f5f5;
+    padding: 40px ;
+    margin-top: 20px;
+    position: relative;
+    transition: 0.5s;
+    display: inline-block;
+}
+.olb-cards:hover{
+    background-color: var(--primarycolor);
+}
+.olb-cards .content{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.olb-cards:hover .content{
+    transform: scale(1.1);
+}
+.olb-cards p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    margin-top: 30px;
+}
+.olb-cards h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    margin: 30px 0;
+}
+.olb-cards a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #777777;
+}
+.olb-cards span{
+    color: #777777;
+}
+.olb-cards .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px ;
+    transition: 0.5s;
+    opacity: 0;
+}
+.olb-cards .overlay p{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-top: 30px;
+}
+.olb-cards .overlay h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin: 30px 0;
+}
+.olb-cards .overlay a{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.olb-cards .overlay span{
+    color: white;
+}
+.overlay:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.olb-cards .overlay .left{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    transition: 0.4s;
+}
+.icons .left a{
+    color: var(--primarycolor);
+}
+.olb-cards .overlay .left:hover{
+    background-color: var(--secondarycolor);
+}
+.olb-cards .overlay .right{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    transition: 0.4s;
+}
+.icons .right a{
+    color: var(--primarycolor);
+}
+.olb-cards .overlay .right:hover{
+    background-color: var(--secondarycolor);
+}
+#blogs .yellowbtn{
+    margin: 60px 510px;
+}
+/* Our Latest Blogs end here */
+/* footer section start here */
+#footer{
+    background-color: #f5f5f5;
+    padding: 96px 0 60px 0;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 10px 16px;
+    position: relative;
+    /* display: inline-block; */
+}
+#footer .Bizzency{
+    width: 25%;
+    /* display: block; */
+}
+.Bizzency p{
+     font-family: var(--thirdfont);
+     font-size: 14px;
+     font-weight: 400;
+     color: #777777;
+     margin: 30px 0;
+     line-height: 20px;
+     display:inline-block;
+}
+.social-links ul li{
+    display: inline-block;
+}
+.social-links ul li a{
+    display: inline-block;
+    outline: 1px solid #0f2f44;
+    font-size: 20px;
+    color: #0f2f44;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: 400ms;
+}
+.social-links ul li:hover a{
+    background-color: var(--primarycolor);
+    color: white;
+}
+#footer .contact{
+    width: 25%;
+    display: inline-block;
+}
+.contact h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    margin-bottom: 40px;
+}
+.contact .icon{
+    width: 15%;
+    font-size: 24px;
+    color: #777777;
+    margin: 15px 0;
+}
+.contact .info{
+    width: 85%;
+    font-family: var(--thirdfont);
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    margin: 0;
+}
+#footer .important{
+    width: 20%;
+}
+.important h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    margin-bottom: 35px;
+}
+.important ul li {
+    display: inline-block;
+    width: 100%;
+}
+.important ul li a{
+    display: block;
+    font-family: var(--thirdfont);
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    margin: 12px 0;
+    transition: 400ms;
+}
+.important ul li:hover a{
+    padding-left: 20%;
+    color: var(--primarycolor);
+}
+#footer .flicker{
+    width: 30%;
+    /* display: block; */
+}
+#footer .flicker h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    margin-bottom: 40px;
+}
+#footer .flicker .flicker-img{
+    width: calc(25%-30%);
+    margin: 0 30px 15px 0;
+    transform: translate(1);
+    /* display: inline-block; */
+}
+#footer .flicker .flicker-img {
+    display: inline-block;
+}
+#footer .ft-overlay a {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    top: -30px;
+    right: calc(50% - 30px);
+    color: var(--primarycolor);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    transition: 400ms;
+}
+
+#footer .ft-overlay:hover a{
+    background-color: var(--secondarycolor);
+    color: white;
+}
+a{
+    align-items: center;
+}
+#bottom{
+    background-color: #f6f6f6;
+}
+#bottom p{
+    padding: 20px 0;
+    text-align: center;
+    font-family: var(--thirdcolor);
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+}
+#bottom p a{
+    color: var(--secondarycolor);
+}
+.product{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+
+}
+.men{
+    background-color: lightblue;
+}
+.women{
+    background-color: red;
+}
+.child{
+    background-color: yellow;
+}
+.btn-group button{
+    padding: 20px;
+    border-radius: 50px;
+    background-color:black;
+    color: white;
+    border: none;
+}
+/* Footer section ends here */
+
+
+
+
+
+
+
+
+
+
+
